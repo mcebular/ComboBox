@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:title="ComboBoxPreference example">
+
+        <com.mc0239.Preference.ComboBoxPreference
+            android:title="Favorite planet"
+            android:key="favorite_planet"
+            app:entries="@array/planets_array"
+            app:entryValues="@array/planets_array_values"
+            android:defaultValue="Earth"
+            android:hint="Your planet!"
+            android:inputType="textPersonName" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
