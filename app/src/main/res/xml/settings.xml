@@ -6,13 +6,13 @@
         android:title="ComboBoxPreference example">
 
         <com.mc0239.Preference.ComboBoxPreference
-            android:title="Favorite planet"
-            android:key="favorite_planet"
-            app:entries="@array/planets_array"
-            app:entryValues="@array/planets_array_values"
-            android:defaultValue="Earth"
-            android:hint="Your planet!"
-            android:inputType="textPersonName" />
+            android:title="Choose server"
+            android:key="server"
+            app:entries="@array/server_entries_array"
+            app:entryValues="@array/server_values_array"
+            android:defaultValue="http://www.example.co.uk/"
+            android:hint="http://example.com/"
+            android:inputType="textUri" />
 
     </PreferenceCategory>
 

@@ -23,7 +23,7 @@ public class ActivityMain extends AppCompatActivity {
         // simple usage example with entries and values defined in resources
         // use an empty <item/> tag for a custom value field.
         ComboBox comboBox1 = findViewById(R.id.comboBox1);
-        ComboBoxAdapter adapter1 = ComboBoxAdapter.createFromResources(this, R.array.planets_array, R.array.planets_array_values);
+        ComboBoxAdapter adapter1 = ComboBoxAdapter.createFromResources(this, R.array.server_entries_array, R.array.server_values_array);
         comboBox1.setAdapter(adapter1);
 
         // usage example with a List structure
