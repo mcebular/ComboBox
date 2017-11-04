@@ -1,4 +1,4 @@
-# EditableSeekBar
+# ComboBox
 
 Combination of Spinner and EditText. Android 4.4+ (API 19)
 
