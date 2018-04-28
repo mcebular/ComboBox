@@ -8,14 +8,14 @@ Combination of Spinner and EditText. Android 4.4+ (API 19)
 1. Clone repo and add `/ComboBox/combobox/` as a module and dependency
 in your project's settings.gradle:
 
-```
+```gradle
 include ':app', ':combobox'
 project(':combobox').projectDir = new File('/path/to/ComboBox/combobox/')
 ```
 
 and in your project's `app/build.gradle` dependencies:
 
-```
+```gradle
 dependencies {
     ...
     implementation project(':combobox')
@@ -24,7 +24,7 @@ dependencies {
 
 2. Include ComboBox widget in your layout
 
-```
+```xml
 <com.mc0239.ComboBox
     android:id="@+id/comboBox2"
     android:layout_width="match_parent"
@@ -33,7 +33,7 @@ dependencies {
 
 3.a. Add an adapter to ComboBox using resource arrays:
 
-```
+```java
 ComboBox comboBox1 = findViewById(R.id.comboBox1);
 ComboBoxAdapter adapter1 = ComboBoxAdapter
         .createFromResources(this, R.array.server_entries_array, R.array.server_values_array);
@@ -42,7 +42,7 @@ comboBox1.setAdapter(adapter1);
 
 To create a custom entry in array, leave an empty `<item/>` tag in values array:
 
-```
+```xml
 <string-array name="server_entries_array">
     <item>Germany</item>
     <item>UK</item>
@@ -58,8 +58,8 @@ To create a custom entry in array, leave an empty `<item/>` tag in values array:
 ```
 
 3.b. Or add an adapter to ComboBox using `List<Pair<String, String>>` arrays:
-```
 
+```java
 ArrayList<Pair<String, String>> list = new ArrayList<>();
 list.add(new Pair<>("Entry 1", "value1"));
 list.add(new Pair<>("Entry 2", "value2"));
@@ -74,7 +74,7 @@ comboBox2.setAdapter(adapter2);
 
 4. (Optional) Customize EditText input and/or listen for selected item changes:
 
-```
+```java
 // EditText hint and input type
 comboBox2.setHint("value x");
 comboBox2.setInputType(InputType.TYPE_TEXT_FLAG_NO_SUGGESTIONS);
@@ -91,7 +91,7 @@ comboBox2.setOnValueChangedListener(new ComboBox.OnValueChangedListener() {
 
 You can use ComboBox as a preference on a PreferenceScreen
 
-```
+```xml
 <com.mc0239.Preference.ComboBoxPreference
     android:title="Choose server"
     android:key="server"
