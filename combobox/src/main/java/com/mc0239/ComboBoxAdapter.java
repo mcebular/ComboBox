@@ -71,7 +71,7 @@ public class ComboBoxAdapter extends BaseAdapter implements SpinnerAdapter {
         List<Pair<String, String>> items = new ArrayList<>(arrayEntries.length);
         String customText = "Custom:";
         for(int i=0; i<arrayEntries.length; i++) {
-            Log.d(ComboBoxAdapter.class.getSimpleName(), String.format("%s - %s", arrayEntries[i], arrayValues[i]));
+            //Log.d(ComboBoxAdapter.class.getSimpleName(), String.format("%s - %s", arrayEntries[i], arrayValues[i]));
             if(arrayValues[i].equals("")) {
                 customText = arrayEntries[i];
                 items.add(null);

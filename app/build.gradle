@@ -20,6 +20,7 @@ android {
 
 dependencies {
     api fileTree(dir: 'libs', include: ['*.jar'])
+    api project(':combobox')
+
     implementation 'com.android.support:appcompat-v7:26.1.0'
-    implementation project(':combobox')
 }
