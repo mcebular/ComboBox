@@ -1,24 +1,23 @@
 # ComboBox
 
+[![Release](https://jitpack.io/v/mc0239/ComboBox.svg)](https://jitpack.io/#mc0239/ComboBox)
+
 Combination of Spinner and EditText. Android 4.4+ (API 19)
 
 # Usage
 *For example usages, see the sample app in the `app/` folder.*
 
-1. Clone repo and add `/ComboBox/combobox/` as a module and dependency
-in your project's settings.gradle:
-
+1. Add Jitpack to repositories in `build.gradle` and add ComboBox dependency to dependencies:
 ```gradle
-include ':app', ':combobox'
-project(':combobox').projectDir = new File('/path/to/ComboBox/combobox/')
-```
+repositories {
+    // your other repos...
+    jcenter()
+    maven { url "https://jitpack.io" }
+}
 
-and in your project's `app/build.gradle` dependencies:
-
-```gradle
 dependencies {
-    ...
-    implementation project(':combobox')
+    // your other deps...
+    implementation 'com.github.mc0239:ComboBox:v1.0.0'
 }
 ```
 
