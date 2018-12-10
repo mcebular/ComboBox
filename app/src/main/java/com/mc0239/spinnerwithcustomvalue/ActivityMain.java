@@ -6,8 +6,8 @@ import android.text.InputType;
 import android.util.Pair;
 import android.widget.TextView;
 
-import com.mc0239.ComboBox;
-import com.mc0239.ComboBoxAdapter;
+import com.mc0239.combobox.ComboBox;
+import com.mc0239.combobox.ComboBoxAdapter;
 
 import java.util.ArrayList;
 

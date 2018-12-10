@@ -9,11 +9,11 @@
     android:paddingTop="16dp"
     >
 
-    <com.mc0239.ComboBox
+    <com.mc0239.combobox.ComboBox
         android:id="@+id/comboBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
 
-    </com.mc0239.ComboBox>
+    </com.mc0239.combobox.ComboBox>
 
 </LinearLayout>

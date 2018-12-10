@@ -1,4 +1,4 @@
-package com.mc0239;
+package com.mc0239.combobox;
 
 import android.content.Context;
 import android.os.Build;
@@ -14,8 +14,6 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.SpinnerAdapter;
-
-import com.mc0239.spinnerwithcustomvalue.R;
 
 /**
  * Created by martin on 11/3/17.

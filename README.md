@@ -24,7 +24,7 @@ dependencies {
 2. Include ComboBox widget in your layout
 
 ```xml
-<com.mc0239.ComboBox
+<com.mc0239.combobox.ComboBox
     android:id="@+id/comboBox2"
     android:layout_width="match_parent"
     android:layout_height="wrap_content" />
@@ -91,7 +91,7 @@ comboBox2.setOnValueChangedListener(new ComboBox.OnValueChangedListener() {
 You can use ComboBox as a preference on a PreferenceScreen
 
 ```xml
-<com.mc0239.Preference.ComboBoxPreference
+<com.mc0239.combobox.Preference.ComboBoxPreference
     android:title="Choose server"
     android:key="server"
     app:entries="@array/server_entries_array"

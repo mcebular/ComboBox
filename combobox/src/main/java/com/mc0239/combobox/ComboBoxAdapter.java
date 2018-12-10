@@ -1,9 +1,8 @@
-package com.mc0239;
+package com.mc0239.combobox;
 
 import android.content.Context;
 import android.support.annotation.ArrayRes;
 import android.support.annotation.NonNull;
-import android.util.Log;
 import android.util.Pair;
 import android.view.LayoutInflater;
 import android.view.View;

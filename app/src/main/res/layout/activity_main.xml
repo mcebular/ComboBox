@@ -9,12 +9,12 @@
     android:orientation="vertical"
     android:padding="16dp" >
 
-    <com.mc0239.ComboBox
+    <com.mc0239.combobox.ComboBox
         android:id="@+id/comboBox1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <com.mc0239.ComboBox
+    <com.mc0239.combobox.ComboBox
         android:id="@+id/comboBox2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
