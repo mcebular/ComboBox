@@ -1,4 +1,4 @@
-package com.mc0239.combobox.Preference;
+package com.mc0239.combobox;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -6,10 +6,6 @@ import android.preference.DialogPreference;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
-
-import com.mc0239.combobox.ComboBox;
-import com.mc0239.combobox.ComboBoxAdapter;
-import com.mc0239.combobox.R;
 
 /**
  * Created by martin on 11/3/17.

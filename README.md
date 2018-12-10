@@ -91,7 +91,7 @@ comboBox2.setOnValueChangedListener(new ComboBox.OnValueChangedListener() {
 You can use ComboBox as a preference on a PreferenceScreen
 
 ```xml
-<com.mc0239.combobox.Preference.ComboBoxPreference
+<com.mc0239.combobox.ComboBoxPreference
     android:title="Choose server"
     android:key="server"
     app:entries="@array/server_entries_array"

@@ -7,7 +7,7 @@ import android.preference.PreferenceFragment;
 import android.preference.PreferenceManager;
 import android.support.annotation.Nullable;
 
-import com.mc0239.combobox.Preference.ComboBoxPreference;
+import com.mc0239.combobox.ComboBoxPreference;
 
 import java.util.Map;
 
