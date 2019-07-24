@@ -5,6 +5,7 @@
 Combination of Spinner and EditText. Android 4.4+ (API 19)
 
 ![Sample screenshots](https://raw.githubusercontent.com/mc0239/ComboBox/master/combobox.jpg)
+
 # Usage
 *For example usages, see the sample app in the `app/` folder.*
 
