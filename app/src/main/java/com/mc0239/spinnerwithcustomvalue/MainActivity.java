@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // example usage of a ComboBoxPreference (see res/xml/settings.xml)
-        getFragmentManager().beginTransaction().replace(R.id.frameLayout, new MyPreferenceFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout, new MyPreferenceFragment()).commit();
     }
 
 }

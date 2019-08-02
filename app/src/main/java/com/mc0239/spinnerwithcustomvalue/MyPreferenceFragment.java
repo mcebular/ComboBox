@@ -2,12 +2,14 @@ package com.mc0239.spinnerwithcustomvalue;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.preference.Preference;
-import android.preference.PreferenceFragment;
 import android.preference.PreferenceManager;
-import androidx.annotation.Nullable;
 
-import com.mc0239.combobox.ComboBoxPreference;
+import androidx.annotation.Nullable;
+import androidx.preference.Preference;
+import androidx.preference.PreferenceFragmentCompat;
+
+import com.mc0239.combobox.preference.ComboBoxPreference;
+import com.mc0239.combobox.preference.ComboBoxPreferenceDialogFragmentCompat;
 
 import java.util.Map;
 
@@ -15,7 +17,7 @@ import java.util.Map;
  * Created by martin on 11/3/17.
  */
 
-public class MyPreferenceFragment extends PreferenceFragment implements SharedPreferences.OnSharedPreferenceChangeListener {
+public class MyPreferenceFragment extends PreferenceFragmentCompat implements SharedPreferences.OnSharedPreferenceChangeListener {
 
     SharedPreferences prefs;
 
@@ -31,6 +33,24 @@ public class MyPreferenceFragment extends PreferenceFragment implements SharedPr
         for (Map.Entry<String, ?> entry : prefs.getAll().entrySet()) {
             loadSummary(entry.getKey());
         }
+    }
+
+    @Override
+    public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
+        // TODO
+    }
+
+    @Override
+    public void onDisplayPreferenceDialog(Preference preference) {
+
+        if (preference instanceof ComboBoxPreference) {
+            ComboBoxPreferenceDialogFragmentCompat dialog = ComboBoxPreferenceDialogFragmentCompat.newInstance(preference.getKey());
+            dialog.setTargetFragment(this, 0);
+            dialog.show(getFragmentManager(), "hehe xd");
+        } else {
+            super.onDisplayPreferenceDialog(preference);
+        }
+
     }
 
     @Override

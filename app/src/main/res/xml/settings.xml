@@ -5,7 +5,7 @@
     <PreferenceCategory
         android:title="ComboBoxPreference example">
 
-        <com.mc0239.combobox.ComboBoxPreference
+        <com.mc0239.combobox.preference.ComboBoxPreference
             android:title="Choose server"
             android:key="server"
             app:entries="@array/server_entries_array"
