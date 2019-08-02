@@ -2,8 +2,8 @@ package com.mc0239.combobox;
 
 import android.content.Context;
 import android.os.Build;
-import android.support.annotation.Nullable;
-import android.support.annotation.RequiresApi;
+import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.AttributeSet;
