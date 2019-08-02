@@ -11,7 +11,7 @@ import com.mc0239.combobox.ComboBoxAdapter;
 
 import java.util.ArrayList;
 
-public class ActivityMain extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
